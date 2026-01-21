@@ -1,0 +1,36 @@
+.product-details {
+    padding: 20px 50px;
+    display: grid;
+    grid-template-rows: auto auto;
+    ;
+    row-gap: 50px;
+}
+
+.product-info {
+    display: grid;
+    grid-template-columns: 250px auto;
+    column-gap: 40px;
+    &__container {
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: space-between;
+        padding: 10px 0;
+        &-data {
+            h3 {
+                margin: 0;
+            }
+            display: grid;
+            grid-template-rows: repeat(3, max-content);
+            row-gap: 20px;
+
+        }
+        &-cart {
+            display: grid;
+            grid-template-columns: 20px auto;
+            align-content: center;
+            column-gap: 10px;
+            cursor: pointer;
+            align-content: end;
+        }
+    }
+}

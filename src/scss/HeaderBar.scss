@@ -1,0 +1,20 @@
+.header-bar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    height: 50px;
+    padding: 0 40px;
+    border-bottom: 1px solid #009b91;
+    
+    &__logo {
+        cursor: pointer;
+    }
+
+    &__time {
+        text-align: center;
+    }
+    
+    &__cart {
+         cursor: pointer;
+    }
+}
