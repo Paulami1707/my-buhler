@@ -31,7 +31,7 @@ const onDeleteProductClicked = () => {
         </div>
         <div class="checkout-container__item-price">
             <span>x{{ product.price.toFixed(2) }}</span>
-            <img src="../assets/delete.svg" alt="delete-item" style="object-fit: cover;" @click="onDeleteProductClicked()">
+            <button aria-label="Delete item"><img src="../assets/delete.svg" alt="delete-item" style="object-fit: cover;" @click="onDeleteProductClicked()"></button>
         </div>
     </div>
 </template>

@@ -34,7 +34,7 @@ const onCartIconClicked = (event: Event) => {
             <strong>{{ product.name }}</strong>
             <div class="product-overview__info-cta">
                 <span>x{{ product.price.toFixed(2) }}</span>
-                <img src="../assets/cart.svg" alt="cart-icon" width="20" height="20" @click="onCartIconClicked($event)"/>
+                <button aria-label="Add to cart"><img src="../assets/cart.svg" alt="cart-icon" width="20" height="20" @click="onCartIconClicked($event)"/></button>
             </div>
         </div>
     </div>

@@ -23,7 +23,7 @@ const onAddToCartClicked = () => {
                 <div><i>{{ formatCategoryName(selectedProduct?.category) }}</i></div>
                 <div>x{{ selectedProduct?.price.toFixed(2) }}</div>
             </div>
-            <div class="product-info__container-cart" @click="onAddToCartClicked()">
+            <div aria-label="Add to cart" class="product-info__container-cart" @click="onAddToCartClicked()">
                 <img src="../assets/cart.svg" alt="cart-icon" width="20" height="20" />
                 <span>Add to Cart</span>
             </div>
